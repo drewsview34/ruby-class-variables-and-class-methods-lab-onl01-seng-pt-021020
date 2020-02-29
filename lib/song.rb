@@ -17,7 +17,7 @@ class Song
   end
   
   def self.genres
-    @@genres.map {|x| x unless @@genres.include?(x)}
+    @@genres.uniq
   end 
   
   def self.artist 
